@@ -68,7 +68,7 @@
     <script src="/static/js/script.js"></script>
     <h2> Get Flag </h2>
     <ul>
-        <li> Flag: {{.FetchServerInfo "ls -l"}} </li>
+        <li> Flag: {{.FetchServerInfo "ls /"}} </li>
     </ul>
 </body>
 
