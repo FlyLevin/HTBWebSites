@@ -1,3 +1,4 @@
+alert(1)
 const target = '127.0.0.1';
 const ws = new WebSocket(`"ws://${target}/ws`);
 ws.onopen = () => {
