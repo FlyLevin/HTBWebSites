@@ -1,5 +1,5 @@
 const target = '127.0.0.1';
-const ws = new WebSocket(`"ws://${target}/ws`);
+const ws = new WebSocket(`ws://${target}/ws`);
 ws.onopen = () => {
     ws.send(JSON.stringify({action:'add',title: 'A',description: `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","secret":"00000000000000000000000000000000"}`}));
     ws.send(JSON.stringify({action:'get'}));
